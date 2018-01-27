@@ -25,7 +25,8 @@ class Home extends CI_Controller {
 			"title" => "Bataan Directory"
 		);
 		$this->load->view("templates/header", $data);
+		$this->load->view("directory/search_filter");
+		$this->load->view("directory/result_items");
 		$this->load->view("templates/footer");
-		// echo "Homepage";
 	}
 }

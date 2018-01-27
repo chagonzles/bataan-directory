@@ -1,0 +1,43 @@
+.nav-logo {
+    background: #ffc107;
+    padding: 20px;
+    font-weight: bolder;
+    color: #000;
+}
+
+.nav-brand {
+    font-weight: bolder;
+}
+
+
+.cover {
+    height: 30vh;
+    width: 100%;
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+    background: #49b3e8;
+}
+    
+.search-filter-label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.search-btn {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.search-bar {
+    font-size: 1.50em;
+    font-weight: bold;
+    border: none;
+}
+
+.search-heading {
+    font-weight: bolder;
+    color: #fff;
+}
