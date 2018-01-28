@@ -27,45 +27,26 @@ An online directory dedicated to establishments based in Bataan.
 5. Go to localhost/bataan-directory on your browser. 
 
 ## File and Structure Guides
-- app (Folder for client side)
--- `app.css` (All custom styles used are included here)
--- `app.js` (Main script file.ex: Calling API)
+#### app (Folder for client side)
+- `app.css` (All custom styles used are included here)
+- `app.js` (Main script file.ex: Calling API)
 
-- assets (JS and CSS library files are included here)
+#### assets (JS and CSS library files are included here)
 
-- public
--- establishments (Thumbnails of establishments are uploaded here)
+#### public (thumbnails are uploaded here inside establishments folder)
 
-- server (CodeIgniter application folder renamed to server)
--- controllers
----- api (API controllers folder)
------ `Establishments.php` (API Controller for Establishments)
----- `Home.php` (Controller for homepage)
-
--- views 
----- templates (header and footer are here)
----- directory 
------ `result_items.php` (View for result items)
------ `search_filter.php` (Search bar and search button)
-
- ├── app                   													# Client side folder.
- |   ├── app.css                 	 					# All custom styles used
- |   └── app.js                  	 					# Main script file (ex. for calling API)
- ├── assets                													# JS and CSS library files
- ├── public   							           								# Files uploaded      		
- |   ├── establishments										  					# Thumbnails of establishments
- ├── server																													# CodeIgniter `application` folder renamed to `server`
-	|			├── controllers
-	|		 |			├── api																		 					# API Controllers folder
-	|	  |   			└──Establishments.php  					# API Controller for Establishments
-	|   |   └── Home.php																			# Controller for homepage
-	|			├── views
-	|		 |			├── templates																		
-	|   |   				└── header.php													# header (head, css and navbar)
-	|   |   				└── footer.php											  # header (js files and closing html)		
-	|			|			├── directory
-	|   |     			└── result_items.php
-	|   |        └── search_filter.php
+#### server (CodeIgniter application folder renamed to server)
+##### controllers
+###### api (API controllers folder)
+- `Establishments.php` (API Controller for Establishments)
+- `Home.php` (Controller for homepage)
+##### views 
+###### templates (header and footer are here)
+- `header.php`
+- `footer.php`
+###### directory 
+- `result_items.php` (View for result items)
+- `search_filter.php` (Search bar and search button)
 
 ## Features
 - Search establishments by name, location and category
