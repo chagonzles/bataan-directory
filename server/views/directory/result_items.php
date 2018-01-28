@@ -14,9 +14,17 @@
                         <div class="col-sm">
                             <h4 class="card-title">{{ result.name }}</h4>
                             <p class="card-text">
+                                <div class="row result-sub-title">
+                                    <div class="col-sm-4">
+                                        {{ result.location }}
+                                    </div>
+                                    <div class="col">
+                                        {{ result.category }}
+                                    </div>
+                                </div>
                                 <div class="row">
                                     <div class="col-sm-4">
-                                        Address: 
+                                        Complete Address: 
                                     </div>
                                     <div class="col-sm-8">
                                         {{ result.address }}
@@ -44,6 +52,14 @@
                                     </div>
                                     <div class="col-sm-8">
                                         {{ result.email }}
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        Contact Person
+                                    </div>
+                                    <div class="col-sm-8">
+                                        {{ result.contact_person ? result.contact_person : 'N/A' }}
                                     </div>
                                 </div>
                                 <div class="row">
