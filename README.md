@@ -19,8 +19,6 @@ An online directory dedicated to establishments based in Bataan.
 - XAMPP Server 7.1.11
 - phpMyAdmin 4.7.4
 
-====================================================================================
-
 ## Requirements & Installation
 1. Download and Install Local Server (XAMPP, MAMP, WAMPP, etc)
 2. Download zip or clone repository. 
@@ -50,7 +48,24 @@ An online directory dedicated to establishments based in Bataan.
 ----- `result_items.php` (View for result items)
 ----- `search_filter.php` (Search bar and search button)
 
-====================================================================================
+ ├── app                   													# Client side folder.
+ |   ├── app.css                 	 					# All custom styles used
+ |   └── app.js                  	 					# Main script file (ex. for calling API)
+ ├── assets                													# JS and CSS library files
+ ├── public   							           								# Files uploaded      		
+ |   ├── establishments										  					# Thumbnails of establishments
+ ├── server																													# CodeIgniter `application` folder renamed to `server`
+	|			├── controllers
+	|		 |			├── api																		 					# API Controllers folder
+	|	  |   			└──Establishments.php  					# API Controller for Establishments
+	|   |   └── Home.php																			# Controller for homepage
+	|			├── views
+	|		 |			├── templates																		
+	|   |   				└── header.php													# header (head, css and navbar)
+	|   |   				└── footer.php											  # header (js files and closing html)		
+	|			|			├── directory
+	|   |     			└── result_items.php
+	|   |        └── search_filter.php
 
 ## Features
 - Search establishments by name, location and category
