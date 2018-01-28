@@ -19,12 +19,38 @@ An online directory dedicated to establishments based in Bataan.
 - XAMPP Server 7.1.11
 - phpMyAdmin 4.7.4
 
+====================================================================================
+
 ## Requirements & Installation
 1. Download and Install Local Server (XAMPP, MAMP, WAMPP, etc)
 2. Download zip or clone repository. 
 3. Extract zip or copy entire folder to htdocs of XAMPP folder (or any other local server)
 4. Import or execute the queries of bataan_directory.sql file found at the root of project
 5. Go to localhost/bataan-directory on your browser. 
+
+## File and Structure Guides
+- app (Folder for client side)
+-- `app.css` (All custom styles used are included here)
+-- `app.js` (Main script file.ex: Calling API)
+
+- assets (JS and CSS library files are included here)
+
+- public
+-- establishments (Thumbnails of establishments are uploaded here)
+
+- server (CodeIgniter application folder renamed to server)
+-- controllers
+---- api (API controllers folder)
+----- `Establishments.php` (API Controller for Establishments)
+---- `Home.php` (Controller for homepage)
+
+-- views 
+---- templates (header and footer are here)
+---- directory 
+----- `result_items.php` (View for result items)
+----- `search_filter.php` (Search bar and search button)
+
+====================================================================================
 
 ## Features
 - Search establishments by name, location and category
