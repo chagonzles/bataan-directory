@@ -13,7 +13,7 @@ var app = new Vue({
                           "Foods & Drinks","Government Agencies",
                           "Hardware & Furniture", "Hobbies & Recreation",
                           "Hospitals & Clinics","Hotels & Travel",
-                          "Schools & Instutitions","Sports & Fitness"],
+                          "Schools & Universities","Sports & Fitness"],
         searchResults: null
     },
     methods: {
