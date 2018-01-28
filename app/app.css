@@ -9,26 +9,27 @@
     font-weight: bolder;
 }
 
-
 .cover {
-    height: 30vh;
+    height: 50vh;
     width: 100%;
     background-size: cover;
     display: table;
     background-attachment: fixed;
     background: #49b3e8;
+    margin-bottom: 20px;
 }
-    
+
+.search-heading {
+    padding-top: 80px;
+    font-weight: bolder;
+    color: #fff;
+}
+
 .search-filter-label {
     display: inline-block;
     margin-bottom: .5rem;
     font-weight: bold;
     color: #fff;
-}
-
-.search-btn {
-    font-weight: 600;
-    margin-top: 10px;
 }
 
 .search-bar {
@@ -37,7 +38,16 @@
     border: none;
 }
 
-.search-heading {
-    font-weight: bolder;
-    color: #fff;
+.search-btn {
+    font-weight: 600;
+    margin-top: 10px;
 }
+
+.search-results-text {
+    margin: 20px 0px;
+}
+
+.result-item {
+    margin-bottom: 25px;
+}
+
